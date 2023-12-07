@@ -4,7 +4,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>TC ISTANBUL MEDIPOL UNIVERSITY</title>
+  <title>UMS</title>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'><link rel="stylesheet" href="LoginCSS/login.css">
   <script type="text/javascript" src="LoginJS/login.js"></script>
 
@@ -18,14 +18,14 @@
         
         <label id="email">
           <span>Email</span>
-          <input type="email" name="email" id="signin_email" placeholder="johnsmith@medipol.edu.tr" required pattern="(.+@medipol.edu.tr)|(.+@st.medipol.edu.tr)|(.+@std.medipol.edu.tr)" title="Please enter an email with Medipol extension" /><br>
+          <input type="email" name="email" id="signin_email" placeholder="Shilpi@gmail.com"/><br>
         </label>
         <label>
           <span>Password</span>
           <input type="password" name="password" id="signin_password" pattern=".{5,15}" required title="5 to 15 characters" placeholder="**********" />
         </label>
         <a href="forgot.html"><p class="forgot-pass">Forgot password?</p></a>
-        <button class="submit" id="sign_in" name="login_student">Sign In</button>
+        <button class="submit" id="sign_in" name="login_student">Sign In</button><br>
         <a href = "lecturer_login.php"><button type="button" class="fb-btn"><span>Continue as lecturer</span></button></a>
       </form>
     </div>
@@ -50,12 +50,11 @@
       <form method="post" action="login.php" id="register_form">
           <label>
           <span>Name</span>
-            <input type="text" name="name" id="fullname"  pattern=".{3,}" required title="min character is 3" placeholder="John Smith" required><br>
+            <input type="text" name="name" id="fullname"  pattern=".{3,}" required title="min character is 3" placeholder="Manish Kumar" required><br>
         </label>     
         <label>
           <span>Email</span>
-            <input type="email" name="email" id="signup_email" placeholder="johnsmith@medipol.edu.tr" required pattern="(.+@medipol.edu.tr)|(.+@st.medipol.edu.tr)|(.+@std.medipol.edu.tr)"
-            title="Please enter an email with Medipol extension"><br>
+            <input type="email" name="email" id="signup_email" placeholder="manish@gmail.com"/><br>
         </label>
         <label>
           <span>Password</span>
@@ -69,7 +68,7 @@
 
         <label>
           <span>Phone Number</span>
-          <input type="tel" id="phone" name="phone" placeholder="5351234567" required><br><br>
+          <input type="tel" id="phone" name="phone" placeholder="123456789" required><br><br>
         </label>
 
          <label id="account">
@@ -90,7 +89,7 @@
 </div>
 
 <a class="icon-link">
-  <img src="https://www.medipol.edu.tr/medium/GalleryImage-Image-41.vsf">
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fcollege_4345672&psig=AOvVaw1am9ih4ySBR0xAHePuONPk&ust=1701956735234000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCIjhk4f5-oIDFQAAAAAdAAAAABAE">
 </a>
  <script type="text/javascript" src="LoginJS/script.js"></script>
 </body>
