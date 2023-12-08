@@ -2,31 +2,28 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>UMS</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>UMS</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="student_index.php">UMS</a>
+        <a class="navbar-brand" href="lecturer_index.php">MEBIS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="university.php">University</a>
+              <a class="nav-link" href="faculty.php">Faculty</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="student.php">Student</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="profile.php">Profile</a>
+              <a class="nav-link" href="profileLecturer.php">Profile</a>
             </li>
           </ul>
         </div>
@@ -37,7 +34,7 @@
           <span class="glyphicon glyphicon-log-out"></span> Log out</button>
         </form>
       </nav>
-
+      
       <div id="accordion">
         <div class="card">
           <div class="card-header" id="headingOne">
@@ -47,7 +44,7 @@
               </button>
             </h5>
           </div>
-
+      
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
                    <table class="table table-striped" style="margin: auto;">
@@ -73,7 +70,7 @@
 
                    <?php } ?> 
 
-
+                   
                 </table>
             </div>
           </div>
@@ -89,8 +86,8 @@
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
                 Search for a book:
-
-                <form method="post" action="university.php" > 
+      
+                <form method="post" action="faculty.php" > 
                     <div class="form-group row">
                       <label for="inlineFormInputName1" class="col-sm-2 col-form-label">Book Name</label>
                       <div class="col-sm-10">
@@ -123,7 +120,7 @@
                     $results = mysqli_query($db, $query);
 
                     $row = mysqli_fetch_array($results);
-
+                  
 
                    ?>
 
@@ -145,48 +142,7 @@
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Student Clubs
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-                  <div class="card-group">
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fopenart.ai%2Fdiscovery%2Fsd-1008330184107233333&psig=AOvVaw3t23ahk1SnHQ0dQWuNbwZu&ust=1701958010806000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNDukOf9-oIDFQAAAAAdAAAAABAQ" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Adventure Club</h5>
-                        <form method="post" action="university.php">
-                          <button type="submit" class="btn btn-primary" name="participate_kizilay">Participate</button>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_144664071_office-cleaning-service-flat-vector-illustration-professional-cleaners-in-uniform-cartoon-characters.html&psig=AOvVaw1mRMAABoBoTfnEvbyru-pL&ust=1701958109760000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLilm5b--oIDFQAAAAAdAAAAABAJ" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Cleaning Club</h5>
-                        <form method="post" action="university.php">
-                          <button type="submit" class="btn btn-primary" name="participate_ieee">Participate</button>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img class="card-img-top" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Ftorbk%2Fart%2FAnime-Space-Girl-AI-Render-03-957112659&psig=AOvVaw0aGwCPUyoYF5IW8_wrGOeY&ust=1701958146620000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCi86f--oIDFQAAAAAdAAAAABAE" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Space Club</h5>
-                        <form method="post" action="university.php">
-                          <button type="submit" class="btn btn-primary" name="participate_girisimcilik">Participate</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-          </div>
-        </div>
       </div>
+
 </body>
 </html>
