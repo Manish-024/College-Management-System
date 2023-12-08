@@ -2,42 +2,56 @@ pipeline {
     agent any
     
     stages {
-        stage('Initializing Project') {
+        stage('Init') {
             steps {
                 script {
                     echo 'Initializing...'
                 }
             }
         }
-        stage('Cleaning Project') {
+        stage('Clean') {
             steps {
                 script {
                     echo 'Cleaning...'
                 }
             }
         }
-        stage('Compile Project') {
+        stage('Compile') {
             steps {
                 script {
                     echo 'Compiling...'
                 }
             }
         }
-        stage('Tests') {
+        stage('Junit') {
             steps {
                 script {
-                    echo 'Tests...'
+                    echo 'Junit Tests...'
                 }
             }
         }
-        stage('Build Project') {
+        stage('Selenium') {
+            steps {
+                script {
+                    echo 'Selenium Tests...'
+                }
+            }
+        }
+        stage('Build') {
             steps {
                 script {
                     echo 'Build Project...'
                 }
             }
         }
-        stage('Deploy') {
+        stage('Deploy Dev') {
+            steps {
+                script {
+                    echo 'Deploy...'
+                }
+            }
+        }
+        stage('Deploy Prod') {
             steps {
                 script {
                     echo 'Deploy...'
