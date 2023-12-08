@@ -37,7 +37,7 @@
           <span class="glyphicon glyphicon-log-out"></span> Log out</button>
         </form>
       </nav>
-
+      
       <div id="accordion">
         <div class="card">
           <div class="card-header" id="headingOne">
@@ -47,7 +47,7 @@
               </button>
             </h5>
           </div>
-
+      
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
                    <table class="table table-striped" style="margin: auto;">
@@ -73,7 +73,7 @@
 
                    <?php } ?> 
 
-
+                   
                 </table>
             </div>
           </div>
@@ -89,7 +89,7 @@
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
                 Search for a book:
-
+      
                 <form method="post" action="university.php" > 
                     <div class="form-group row">
                       <label for="inlineFormInputName1" class="col-sm-2 col-form-label">Book Name</label>
@@ -123,7 +123,7 @@
                     $results = mysqli_query($db, $query);
 
                     $row = mysqli_fetch_array($results);
-
+                  
 
                    ?>
 
