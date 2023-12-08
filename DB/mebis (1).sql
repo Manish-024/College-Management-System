@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3308
--- Generation Time: Dec 07, 2023 at 06:27 PM
+-- Generation Time: Dec 08, 2023 at 12:06 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -65,16 +65,16 @@ CREATE TABLE `course` (
 
 INSERT INTO `course` (`course_name`, `AKTS`, `class_no`, `course_type`, `lecturer`, `prerequisite`, `semester`) VALUES
 ('Algorithm', 8, 'C-210', 'Technical', 'manish', 'Data Structures', 'Spring'),
-('Calculus 1', 8, 'CZ-16', 'Technical', 'Mehmed Rafet ÖZDEMİR', 'NULL', 'Spring'),
-('Calculus 2', 8, 'CZ-16', 'Technical', 'Mehmed Rafet ÖZDEMİR', 'Calculus 1', 'Fall'),
-('Data Structures', 8, 'C-310', 'Technical', 'Hasan Fehmi Ateş', 'Object Oriented Programming', 'Fall'),
-('Database', 8, 'C-210', 'Technical', 'Reda Alhajj', 'Object Oriented Programming', 'Spring'),
-('Introduction to Programming', 6, 'C-211', 'Technical', 'Selim Akyokuş', 'NULL', 'Fall'),
-('Machine Learning', 6, 'C-313', 'Non-Technical', 'Bahadır Kürşat Güntürk', 'NULL', 'Fall'),
-('Microprocessor', 6, 'C-210', 'Technical', 'Mehmet Kocatürk', 'Introduction to Programming', 'Fall'),
-('Object Oriented Programming', 8, 'C-212', 'Technical', 'Selim Akyokuş', 'Introduction to Programming', 'Spring'),
-('Probability', 8, 'CZ-12', 'Technical', 'Mehmet Kemal Özdemir', 'Calculus 2', 'Spring'),
-('Web Design', 8, 'C-315', 'Non technical', 'Muhsin Zahid Uğur', 'NULL', 'Spring');
+('Calculus 1', 8, 'CZ-16', 'Technical', 'Sagun mishra', 'NULL', 'Spring'),
+('Calculus 2', 8, 'CZ-16', 'Technical', 'Vijay Kumar', 'Calculus 1', 'Fall'),
+('Data Structures', 8, 'C-310', 'Technical', 'Supriya Gupta', 'Object Oriented Programming', 'Fall'),
+('Database', 8, 'C-210', 'Technical', 'Ankit Sharma', 'Object Oriented Programming', 'Spring'),
+('Introduction to Programming', 6, 'C-211', 'Technical', 'rumali ', 'NULL', 'Fall'),
+('Machine Learning', 6, 'C-313', 'Non-Technical', 'Supriya Gupta', 'NULL', 'Fall'),
+('Microprocessor', 6, 'C-210', 'Technical', 'Rohan Singh', 'Introduction to Programming', 'Fall'),
+('Object Oriented Programming', 8, 'C-212', 'Technical', 'Jana kumar', 'Introduction to Programming', 'Spring'),
+('Probability', 8, 'CZ-12', 'Technical', 'Srivats L', 'Calculus 2', 'Spring'),
+('Web Design', 8, 'C-315', 'Non technical', 'Ritesh k', 'NULL', 'Spring');
 
 -- --------------------------------------------------------
 
@@ -143,7 +143,7 @@ CREATE TABLE `lecturer` (
 --
 
 INSERT INTO `lecturer` (`lecturer_name`, `website`, `birthdate`, `email`, `degree`, `role`, `course_name`, `advised_st_id`, `department`) VALUES
-('Manish', 'https://sens.medipol.edu.tr/m-kemal-ozdemir/', '1967-11-12', 'manish@gmail.com', 'Prof.', 'Deputy Dean', 'Probability', 0, 'EEE'),
+('Manish', 'https://sens.medipol.edu.tr/m-kemal-ozdemir/', '0000-00-00', 'manish@gmail.com', 'bca', 'proffessor', 'Java', 0, 'Development'),
 ('PULKITA', 'GSAHDGJA', '0000-00-00', 'pulkita@gmail.com', 'PHD', 'LECTURER', 'AI', 1234567, 'CS');
 
 -- --------------------------------------------------------
@@ -164,8 +164,8 @@ CREATE TABLE `program` (
 --
 
 INSERT INTO `program` (`program_name`, `est_semester_duration`, `student_id`, `other_uni_name`) VALUES
-('Erasmus', 2, 64160002, 'Harvard University'),
-('Mevlana', 1, 64160001, 'Standford University');
+('Shine', 2, 64160002, 'Harvard University'),
+('Star-Pro', 1, 64160001, 'Standford University');
 
 -- --------------------------------------------------------
 
@@ -192,8 +192,8 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`student_id`, `name`, `birthdate`, `course_code`, `advisor_name`, `degree`, `scholarship`, `grade`, `emp_type`, `department`, `email`) VALUES
-(64160001, 'Mustafa Aktaş', '1998-10-17', 'Database', 'Mehmet Kemal Özdemir', 'Undergrad', 'Full Scholarship', 3, 'Advanced Programming TA', 'Computer Science & Engineering', 'xyz@medipol.edu.tr'),
-(64160002, 'john', '1998-06-16', 'Algorithm', 'Mehmet Kemal Özdemir', 'Undergrad', 'Full Scholarship', 3, 'Probability TA', 'Computer Science & Engineering', 'john@gmail.com');
+(64160001, 'Mustafa Aktaş', '1998-10-17', 'Database', 'Sudha v', 'Undergrad', 'Full Scholarship', 3, 'Advanced Programming TA', 'Computer Science & Engineering', 'xyz@medipol.edu.tr'),
+(64160002, 'john', '1998-06-16', 'Algorithm', 'Sudha V', 'Undergrad', 'Full Scholarship', 3, 'Probability TA', 'Computer Science & Engineering', 'john@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -230,10 +230,10 @@ CREATE TABLE `student_club` (
 --
 
 INSERT INTO `student_club` (`club_name`, `leader_id`) VALUES
-('Girişimcilik Kulübü', 61170008),
 ('IEEE', 63150012),
-('Kızılay', 64160014),
-('Management and Economics Club', 62160008);
+('NCC', 61170008),
+('NSS', 64160014),
+('Sports club', 62160008);
 
 -- --------------------------------------------------------
 
