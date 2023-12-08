@@ -25,19 +25,8 @@ pipeline {
         }
         stage('Tests') {
             steps {
-                stage('JUnit Tests') {
-                    steps {
-                        script {
-                            echo 'Running JUnit tests...'
-                        }
-                    }
-                }
-                stage('Selenium Tests') {
-                    steps {
-                        script {
-                            echo 'Running Selenium tests...'
-                        }
-                    }
+                script {
+                    echo 'Tests...'
                 }
             }
         }
