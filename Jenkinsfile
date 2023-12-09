@@ -51,19 +51,11 @@ pipeline {
                 }
             }
         }
-        stage('Deploy Dev') {
+        stage('Deploy') {
             steps {
                 script {
-                    echo 'Deploy...'
+                    echo 'Deploying...'
                     sleep(time:10,unit:"SECONDS")
-                }
-            }
-        }
-        stage('Deploy Prod') {
-            steps {
-                script {
-                    echo 'Deploy...'
-                    sleep(time:15,unit:"SECONDS")
                 }
             }
         }
