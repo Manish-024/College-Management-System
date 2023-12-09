@@ -6,6 +6,7 @@ pipeline {
             steps {
                 script {
                     echo 'Initializing...'
+                    sleep(time:10,unit:"SECONDS")
                 }
             }
         }
@@ -13,6 +14,7 @@ pipeline {
             steps {
                 script {
                     echo 'Cleaning...'
+                    sleep(time:20,unit:"SECONDS")
                 }
             }
         }
@@ -20,6 +22,7 @@ pipeline {
             steps {
                 script {
                     echo 'Compiling...'
+                    sleep(time:25,unit:"SECONDS")
                 }
             }
         }
@@ -27,13 +30,7 @@ pipeline {
             steps {
                 script {
                     echo 'Junit Tests...'
-                }
-            }
-        }
-        stage('Selenium') {
-            steps {
-                script {
-                    echo 'Selenium Tests...'
+                    sleep(time:13,unit:"SECONDS")
                 }
             }
         }
@@ -41,6 +38,16 @@ pipeline {
             steps {
                 script {
                     echo 'Build Project...'
+                    sleep(time:15,unit:"SECONDS")
+                    
+                }
+            }
+        }
+        stage('Selenium') {
+            steps {
+                script {
+                    echo 'Selenium Tests...'
+                    sleep(time:30,unit:"SECONDS")
                 }
             }
         }
@@ -48,6 +55,7 @@ pipeline {
             steps {
                 script {
                     echo 'Deploy...'
+                    sleep(time:10,unit:"SECONDS")
                 }
             }
         }
@@ -55,6 +63,7 @@ pipeline {
             steps {
                 script {
                     echo 'Deploy...'
+                    sleep(time:15,unit:"SECONDS")
                 }
             }
         }
